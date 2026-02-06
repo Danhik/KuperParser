@@ -43,7 +43,5 @@ func (s *service) applyDefaultHeaders(req *http.Request) {
 	req.Header.Set("Sec-Fetch-Site", "same-origin")
 	req.Header.Set("Sec-Fetch-Mode", "cors")
 	req.Header.Set("Sec-Fetch-Dest", "empty")
-	//req.AddCookie(&http.Cookie{Name: "spid", Value: "1770393537224_be3d811503b542395747123a0c0cd01c_2c05mwtp59om0avi"})
-	//req.AddCookie(&http.Cookie{Name: "spsc", Value: "1770393840000_9db4fb8bf8bee3313518af9f7611d73b_cYnyno5ttEieJDY1kL15kCpcFaEC04iMYaBsLMRQDhwZ"})
 
 }
