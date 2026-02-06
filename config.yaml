@@ -1,0 +1,32 @@
+kuper:
+  base_url: https://kuper.ru
+  store_id: 960 #id магазина Магнит по адресу Одинцово 119Б
+
+departments:
+  names:
+    - "Молоко, сыр, яйца, растительные продукты"
+    - "Овощи, фрукты, зелень, орехи"
+
+pagination:
+  per_page: 5
+  offers_limit: 10
+
+http:
+  timeout_seconds: 30
+  retries: 3
+
+proxy:
+  mode: list          # list | rotation | disabled
+  list:
+      - http://login:password@host:port
+      - http://login:password@host:port
+      - http://login:password@host:port
+  
+  rotation_url: ""     
+
+concurrency:
+  workers: 5
+
+output:
+  directory: ./output
+  format: csv
